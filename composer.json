@@ -1,0 +1,7 @@
+{
+  "autoload": {
+    "psk-4": {
+      "Tasker\\": "src"
+    }
+  }
+}
