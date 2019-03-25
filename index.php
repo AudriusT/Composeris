@@ -10,9 +10,10 @@ $task = new Task();
 
 $query = new QueryBuilder($pdo);
 
-namespace Tasker;
+$query->selectAll('tasks');
 
-class QueryBuilder
-{
+return $statement->fetchAll(PDO::FETCH_CLASS, Task::class);
 
-}
+$task = new Task();
+
+$task->showAll();
